@@ -27,7 +27,7 @@ int main() {
 	int a;
 	int b;
 	int Option;
-	cout << "Elige una Opcion /n 1-Sumar /n 2-Restar /n 3-Multiplicar /n 4-Dividir /n Numero mayor a 4 para Cancelar";
+	cout << "Elige una Opcion \n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4-Dividir \n Numero mayor a 4 para Cancelar";
 	cin >> Option;
 
 	switch (Option) {
