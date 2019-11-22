@@ -76,10 +76,16 @@ public class Cajero {
                     break;
     
                     case 5:
+                    System.out.println("                                              Ingrese el monto a Retirar ");
                     Option = scanner.nextInt();
-                    Balance = Balance - Option;
-                    System.out.println("                                        Gracias por utilizar nuestros servicios su balance actual es: " + Balance);
                     
+                    if(Option < Balance){
+                    Balance = Balance - Option;
+                    System.out.println("                         Gracias por utilizar nuestros servicios su balance actual es: " + Balance);
+                    }
+                    else {
+                        System.out.println("                            lo sentimos, el monto escrito es mas alto que su Balance: " + Balance);
+                    }
                     break;
                 
                     default:
@@ -90,27 +96,27 @@ public class Cajero {
                     break;
     
                     case 2:
-                    System.out.println("                                        Gracias por utilizar nuestros servicios su balance actual es: " + Balance);
+                    System.out.println("                               Gracias por utilizar nuestros servicios su balance actual es: " + Balance);
                     break;
                     
                     case 3:
                     System.out.println("                                              Ingrese el monto a depositar ");
                     Option = scanner.nextInt();
                     Balance = Balance + Option;
-                    System.out.println("                                        Gracias por utilizar nuestros servicios su balance actual es: " + Balance);
+                    System.out.println("                            Gracias por utilizar nuestros servicios su balance actual es: " + Balance);
                     break;
     
                     default:
-                    System.out.println("                                        Gracias por utilizar nuestros servicios");
+                    System.out.println("                                            Gracias por utilizar nuestros servicios");
                     break;
     
                 }       
             
             }
             
-            else{
-                System.out.println("                                              # (: Nos Vemos Vuelva Pronto :) #     ");
-            }
-    
+        else{
+            System.out.println("                                              # (: Nos Vemos Vuelva Pronto :) #     ");
         }
+    
     }
+}
